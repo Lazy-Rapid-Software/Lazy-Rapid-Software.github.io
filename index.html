@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Lazy Rapid Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Commodore 64 Angled';
+            src: url('./fonts/Commodore64Angled.woff2') format('woff2'),
+                url('./fonts/Commodore64Angled.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            font-family: "Commodore 64 Angled";
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 5;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headerBrand">
+        <p>Lazy Rapid Software</p>
+    </div>
+    <div style="right: 5%; position: fixed">
+        <p>:Me</p>
+    </div>
+    <div style="position:fixed; top:100; right:5%;" class="me">
+        <img width="128px" style="border-radius:10%;" src="img/18642095.jpeg" />
+        <ul style="position: absolute; margin-right: 20px;">
+            <li><a target="_blank" href="https://github.com/larsonnn" >GitHub</a></li>
+            <li><a target="_blank" href="https://dev.to/larsonnn">dev.to</a></li>
+            <li><a target="_blank" href="https://twitter.com/Lars_Cloud">Twitter</a></li>
+        </ul>
+    </div>
+    <div style="position: fixed; top: 25%; right:25%">
+        
+    </div>
+    <div style="position: fixed; top: 40%">
+        <p>Projects:</p>
+    </div>
+    <div style="position: fixed; top: 45%">
+        <ul>
+            <li>
+                <a style="" target="_blank" href="https://run4me.de"><span style="">run4me.de</span></a> -
+                Charity
+            </li>
+            <li>
+                <span style="color: purple">Drive</span> - Transport Software
+            </li>
+            <li>
+                Diverses:
+                <ul>
+                    <li>JS libs</li>
+                    <li>Strapi AddOns</li>
+                    <li>AddonSync für World of Warcraft</li>
+                </ul>
+            <li>Blog Beiträge schreiben</li>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        Kontakt: <a target="_blank" href="https://discord.gg/8gCdxzs">Discord</a>, <a href="mailto:lars@feldeisen.de">E-Mail</a> <span style="position:absolute" id="cursor"></span>
+
+    </div>
+    <script>
+        let toggle = false;
+        setInterval(function () {
+            document.getElementById('cursor').innerHTML = toggle ? "" : "_";
+            toggle = !toggle;
+        }, 500);
+    </script>
+</body>
+
+</html>
